@@ -26,9 +26,9 @@ layout: default
     <p>Normally the TDD needs to be created on the preproduction stage alongside with the document design , during the stage of production there are times when it is necessary to change the TDD , there is nothing wrong on adapting de TDD in response to any change in the game.</p>
     <img width="720" height="320" src="https://cdn.discordapp.com/attachments/555497331848380447/681214019532750895/Sin_titulo-1.jpg">
     
-    <h3>
+    <h2>
      What really goes inside a TDD? 
-    </h3>
+    </h2>
     <p>The TDD we actually can see it as shopping list of the requirements of the game, which we define whom, when and how this conditions will be achieved, we can see the TDD as a miniature of the project with several stages, in this stages there will be many diagrams and time estimates to complete the different tasks.</p>
     <h3>Requirements Capture:</h3>
     <p>Requirements capture is the part when we identify all the requirements the game has to satisfy, in this process everyone in the team takes part writing down their expectations, and it can be anything from going to 60 fps to having 3d sound and much more like this, but this stage will be the most critical to a successful project and is also the most difficult. It is difficult to know when you have enough requirements or if you have too many of them, in this stage it will be helpful using the UML system to express ideas.</p>
@@ -51,14 +51,21 @@ layout: default
  <p>For example:</p>
 <img src= "https://cdn.discordapp.com/attachments/555497331848380447/681220241946443840/Sin_titulo-4.jpg">
 
-<h2>
-     Main core subsystems
-</h2>
-This game has 3 main core subsystems: </br>
-- Entity core: in charge of the management of all the objects in the game (player, enemies with pathfinding, coins and checkpoints). This core controls the addition, elimination, save and load of all entities. All the management can be controlled throught the EntityManager module. Every entity has his own movement, states and physics but they share variables that are located in the Entity module. </br>
-- UI core: in charge of the management of all HUD in the game (windows, menus, buttons, sliders, images and texts). This core, like the entity core, can control the addition, elimination of his elements. All the management can be controlled throught the Gui and SceneUI modules. Every UI also have some common variables and are located in the UI_element module. </br>
-- Scene core: in charge of the management of the maps and keybinds of the game. All the management can be controlled throught the Scene module. In this module you can control the load and unload of the maps and music. Also, in this module you have all the keybinds functionality. </br>
+<h3>
+     Performance budget:
+</h3>
+<p>This section of the TDD will be used to describe the goal for the performance of the game running in the desired platform, for example running at least at 60 fps on pc.</p>
 
+<h3>
+     Branch workflow:
+</h3>
+<p> The explanation of all the branches from the project, the importance of each one and a short definition of the reason of its use, for example:</br>
+A project with 3 different branches</br>
+- Master: A branch only for releases of the game.</br>
+- Development: A branch to progress with the game.</br>
+- Bugs: A branch for bug fixing. </br>
+Something like this:</br>
+<img src=https://cdn.discordapp.com/attachments/555497331848380447/681223665487970361/Sin_titulo-7.jpg>
     <h2>So…
        </h2>
 
